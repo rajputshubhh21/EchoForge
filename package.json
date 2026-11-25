@@ -1,0 +1,14 @@
+{
+  "name": "echoforge",
+  "version": "1.0.0",
+  "description": "Speak a rough idea and hear it echoed back from three AI minds.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file=.env server.js"
+  },
+  "engines": { "node": ">=20.6" },
+  "license": "MIT",
+  "dependencies": { "express": "^4.19.2" }
+}

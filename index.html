@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoForge | Hear your idea echoed back</title>
+  <meta name="description" content="Speak a rough idea and hear it echoed back from three minds: a Believer, a Skeptic and Future You.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Echo<span>Forge</span></h1>
+      <p class="subtitle">Say a rough idea out loud. Hear it echoed back from three minds, then walk away with a sharper pitch.</p>
+    </header>
+
+    <section class="input-section">
+      <label for="idea" class="visually-hidden">Your idea</label>
+      <textarea id="idea" placeholder="e.g. An app that helps street vendors take UPI payments by voice…"></textarea>
+
+      <div class="actions">
+        <button id="mic" class="btn" type="button" hidden>🎤 Speak</button>
+        <button id="forge" class="btn btn-primary" type="button">Forge my idea</button>
+      </div>
+
+      <div id="examples" class="chips" aria-label="Example ideas"></div>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+
+    <section id="results" class="results" hidden>
+      <div class="score-card">
+        <div id="score" class="score-number">0</div>
+        <div class="score-info">
+          <strong>Echo score</strong>
+          <span>How clearly your idea survives three perspectives</span>
+          <div class="bar"><div id="scoreBar" class="bar-fill"></div></div>
+        </div>
+      </div>
+
+      <p id="pitch" class="pitch"></p>
+      <div id="echoes"></div>
+
+      <div class="action-card">
+        <strong>Do this in the next 24 hours</strong>
+        <span id="action"></span>
+      </div>
+    </section>
+
+    <footer>Built for the PromptWars × Echo Engineer AI Vibeathon 2026.</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
